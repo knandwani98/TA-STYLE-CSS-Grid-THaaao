@@ -1,0 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* *, *::before, *::after {
+    box-sizing: border-box;
+} */
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;;
+    background-color: #3A4A4F;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: .5rem;
+}
+
+header a {
+    color: #1DA3C7;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: .4rem 4rem;
+    border-top: 4px solid #1DA3C7;
+}
+
+main .container {
+    display: grid;
+    /* margin-top: 1rem; */
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    /* grid-template-rows: repeat(auto-fill, minmax(340px, 1fr)); */
+    border: 1.5rem solid #3A4A4F;
+    gap: 1.5rem;
+}
+
+main .article {
+    background-color: white;
+    /* padding: 0 .8rem; */
+    border-top: 4px solid #1DA3C7;
+}
+
+.article p {
+    padding: .5rem;
+    font-size: .8rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.article a {
+    color: red;
+    font-size: .9rem;
+    font-weight: 600;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+.a4 p {
+    padding-bottom: 0;
+}
+
+.a2 {
+    grid-row: span 3;
+}
+
+.a4 {
+    grid-row: span 2;
+}
+
+.a2 img {
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+}
+
+.a4 img {
+    /* height: 1rem; */
+    display: block;
+    margin: 1rem auto;
+    width: 7rem;
+}
+
+.a3 a {
+    color: white !important;
+    display: block;
+}
+
+.red-bg {
+    background-color: red;
+    padding: .5rem;
+}
+
+.blue-bg {
+    color: white;
+    background-color: #1DA3C7;
+    padding: .5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .a2 {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .a2 {
+        order: 1;
+    }
+
+    .a3 {
+        order: 2;
+    }
+    .a5 {
+        order: 3;
+    }
+    .a6 {
+        order: 4;
+    }
+}
